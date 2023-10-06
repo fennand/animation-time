@@ -217,14 +217,29 @@ img {
   }
 }
 
+#enddiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid #eda0d3;
+}
+
 #equaliser {
   width: 400px;
   height: 400px;
-  padding: 3rem;
-  border: 3px solid #eda0d3;
+  padding: 3rem 3rem 1rem 3rem;
   display: flex;
   justify-content: space-evenly;
   transform: rotate(180deg) scaleX(-1);
+}
+
+audio {
+  align-self: center;
+  padding-bottom: 2rem;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #52fcfc;
 }
 
 .rectangle1 {
@@ -462,3 +477,9 @@ img {
     height: 220px;
   }
 }
+
+/* audio {
+  margin-left: auto;
+  margin-right: auto;
+}
+ */
